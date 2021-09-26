@@ -16,7 +16,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 
 gc = gspread.authorize(credentials)
 
-spreadsheet_key = '1zEYaQs5xKoNa0ZKR4arErSexKfgcbVdZLA_gei6n7II'
+spreadsheet_key = 'spreadsheetkey'
 wks_name = 'Wait Times Disneyland and CA'
 ws = gc.open('Disney Ride Times').worksheet(wks_name)
 existing = gd.get_as_dataframe(ws)
