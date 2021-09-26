@@ -56,7 +56,7 @@ def lambda_handler(event, context):
     
     gc = gspread.authorize(credentials)
 
-    spreadsheet_key = '1zEYaQs5xKoNa0ZKR4arErSexKfgcbVdZLA_gei6n7II'
+    spreadsheet_key = 'speadsheet_key'
     wks_name = 'Wait Times Disneyland and CA'
     #d2g.upload(disney_dataset, spreadsheet_key,wks_name, credentials = credentials, row_names = False)
     ws = gc.open('Disney Ride Times').worksheet(wks_name)
